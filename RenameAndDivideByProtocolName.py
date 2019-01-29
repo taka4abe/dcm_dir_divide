@@ -23,6 +23,10 @@ for CaseID in os.listdir('.'):
                     ProtocolName = ds.ProtocolName
                 except:
                     pass
+                try:
+                    ProtocolName = ProtocolName + "_" + ds.SeriesDescription
+                except:
+                    pass
 
                 try:
                     os.makedirs('../renamed/' + CaseID + '/' + ProtocolName)
@@ -40,6 +44,5 @@ for CaseID in os.listdir('.'):
 
             except:
                 pass
-
 
 print("finished")
