@@ -11,7 +11,7 @@ for CaseID in os.listdir('.'):
     except:
         pass
     if os.path.isdir(CaseID) == True:
-        print("Renaming",  CaseID) # CaseID in 01-001, 01-002, 01-003, ...
+        print("Renaming",  CaseID) 
         for ImageID in os.listdir(CaseID):
             #print(CaseID + "/" +  ImageID)
             try:
