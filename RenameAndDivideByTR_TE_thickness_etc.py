@@ -64,7 +64,7 @@ for CaseID in os.listdir('.'):
 
                 try:
                     shutil.copyfile(target_dicom_file, savename)
-                    print('Saving:' CaseID, ImageID)
+                    print('Saving:', CaseID, ImageID)
                 except:
                     print('Failed to save:', CaseID, ImageID)
                     pass
